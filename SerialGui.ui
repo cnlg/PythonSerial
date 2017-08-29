@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>827</width>
+    <height>511</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>30</y>
+      <width>521</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(177, 177, 177);</string>
+    </property>
+    <property name="title">
+     <string>接收区</string>
+    </property>
+    <widget class="QTextBrowser" name="receiveTextBrowser">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>501</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>181</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="title">
+     <string>串口设置</string>
+    </property>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>196</y>
+       <width>48</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>停止位：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comStopBit">
+     <property name="geometry">
+      <rect>
+       <x>94</x>
+       <y>196</y>
+       <width>69</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>36</y>
+       <width>36</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>串口：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comPort">
+     <property name="geometry">
+      <rect>
+       <x>94</x>
+       <y>36</y>
+       <width>69</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>COM1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>COM2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>COM3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>COM4</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>COM5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>COM6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>COM7</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>COM8</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>COM9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>COM10</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>76</y>
+       <width>48</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>波特率：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comBaud">
+     <property name="geometry">
+      <rect>
+       <x>94</x>
+       <y>76</y>
+       <width>69</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>115200</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>9600</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>116</y>
+       <width>48</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>数据位：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comByteSize">
+     <property name="geometry">
+      <rect>
+       <x>94</x>
+       <y>116</y>
+       <width>69</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>8</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>7</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>156</y>
+       <width>48</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>校验位：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comParity">
+     <property name="geometry">
+      <rect>
+       <x>94</x>
+       <y>156</y>
+       <width>69</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>N</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>E</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>O</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>S</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButtonOpen">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonClose">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>380</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>关闭</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonCheckCom">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>330</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>检测串口</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelShowState">
+    <property name="geometry">
+     <rect>
+      <x>119</x>
+      <y>291</y>
+      <width>48</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>串口状态</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelState">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>42</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>状 态：</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>270</y>
+      <width>331</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(177, 177, 177);</string>
+    </property>
+    <property name="title">
+     <string>发送区</string>
+    </property>
+    <widget class="QTextEdit" name="sendTextBrowser">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>311</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButtonClear">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>330</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>清除</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonSend">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>380</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>发送</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxShowHex">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>280</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hex显示</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxSendHex">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>280</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hex发送</string>
+    </property>
+   </widget>
+   <zorder>groupBox</zorder>
+   <zorder>comPort</zorder>
+   <zorder>comBaud</zorder>
+   <zorder>comByteSize</zorder>
+   <zorder>comParity</zorder>
+   <zorder>comStopBit</zorder>
+   <zorder>comboBox_6</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder></zorder>
+   <zorder>textEdit</zorder>
+   <zorder>pushButtonOpen</zorder>
+   <zorder>pushButtonClose</zorder>
+   <zorder>pushButtonCheckCom</zorder>
+   <zorder>labelShowState</zorder>
+   <zorder>labelState</zorder>
+   <zorder>groupBox_2</zorder>
+   <zorder>pushButtonClear</zorder>
+   <zorder>pushButtonSend</zorder>
+   <zorder>checkBoxShowHex</zorder>
+   <zorder>checkBoxSendHex</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>827</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonOpen</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>port_open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>38</x>
+     <y>426</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>33</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonClose</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>port_close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>137</x>
+     <y>428</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>138</x>
+     <y>459</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonCheckCom</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>port_cheak()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>115</x>
+     <y>369</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>168</x>
+     <y>369</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonClear</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clean_data()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>637</x>
+     <y>379</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>745</x>
+     <y>377</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonSend</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>send_data()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>655</x>
+     <y>433</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>744</x>
+     <y>433</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>port_open()</slot>
+  <slot>port_close()</slot>
+  <slot>port_cheak()</slot>
+  <slot>clean_data()</slot>
+  <slot>send_data()</slot>
+ </slots>
+</ui>
